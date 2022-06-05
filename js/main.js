@@ -20,4 +20,4 @@ const additem = (items, total) => {
     return total;
 }
 
-let total= itemsAmount()
+//let total= itemsAmount()
