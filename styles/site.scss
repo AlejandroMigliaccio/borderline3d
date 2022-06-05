@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*mobile*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EC994B;
+
+    &__logo {
+        width: 9%;
+
+    }
+
+    &__title {
+    }
+
+    &__instagram {
+        width: auto;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 600px) {}
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {}
