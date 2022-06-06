@@ -10,21 +10,32 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #D3DEDC;
 
-    &__logo {
-        width: 12%;
+    &__title {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
 
+        &__logo {
+            width: 12%;
+        }
+
+        &__title {
+            width: 50%;
+        }
     }
 
-    &__title {
-        width: 50%;
+    &__cart {
+        width: 5%;
     }
 
 }
 
-.section{
+.section {
     background-color: #FCF9C6;
 }
 
