@@ -8,12 +8,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  background-color: #EC994B; }
+  justify-content: center;
+  background-color: #D3DEDC; }
   .header__logo {
-    width: 9%; }
-  .header__instagram {
-    width: auto; }
+    width: 12%; }
+  .header__title {
+    width: 50%; }
+
+.section {
+  background-color: #FCF9C6; }
 
 /*Tablet*/
 /*Desktop*/

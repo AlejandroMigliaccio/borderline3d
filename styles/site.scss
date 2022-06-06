@@ -10,20 +10,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    background-color: #EC994B;
+    justify-content: center;
+    background-color: #D3DEDC;
 
     &__logo {
-        width: 9%;
+        width: 12%;
 
     }
 
     &__title {
+        width: 50%;
     }
 
-    &__instagram {
-        width: auto;
-    }
+}
+
+.section{
+    background-color: #FCF9C6;
 }
 
 /*Tablet*/
