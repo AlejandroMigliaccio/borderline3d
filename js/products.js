@@ -10,6 +10,8 @@ const products = [
     { id: 9, name: "Venus de Jalea", price: "$3000", description: "Estatua de mmmmmmm... gloriosa Venus de jalea, 25 cm de alto", url:"./public/Productos/venus.png" }
 ]
 
+const cart = []
+
 const productsList = document.getElementById("product-list")
 
 function loadCards() {
@@ -24,8 +26,17 @@ function loadCards() {
                                  +product.price +"</p>"
                                  +"<p class='product-list__product-card__details__description'>"
                                  + product.description +"</p>"
-                                 +"</div></div>"
+                                 +"</div>"
+                                 +"<div class='product-list__product-card__button>"
+                                 + "<button class=product-list__product-card__button__buy onclick='addToCart(" + `${product}` + ")'>BUY</button> " 
+                                 +"</div>"
+                                 +"</div>"
     }
 }
  
 loadCards()
+
+function addToCart (product){
+    debugger
+    console.log(product)
+}
