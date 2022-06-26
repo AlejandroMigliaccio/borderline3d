@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Nunito", sans-serif;
+    transition: 200ms;
 }
 
 /*mobile*/
@@ -10,15 +11,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     background-color: #d3dedc;
+    justify-content: space-evenly;
 
     &__title {
         width: 80%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
 
         &__logo {
             width: 12%;
@@ -27,37 +27,45 @@
 
         &__title {
             width: 50%;
+            margin-left: 4%;
         }
     }
 
-    &__cart {
+    &__instagram {
         width: 5%;
     }
 }
 
-.produc-list {
+.product-list {
     background-color: #f9f9f9;
     width: 85%;
-    margin: 0 auto;
+    margin: 2rem auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
 
     &__product-card {
-        width: 500px;
-        border: 1px solid #354259;
+        width: 30%;
+        height: auto;
         border-radius: 16px;
         margin: 8px 16px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 24px;
+        word-wrap: break-word;
+        cursor: pointer;
+
         &__title {
+            justify-content: center;
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: auto;
             p {
                 margin: 1rem;
             }
             img {
-                width: 70%;
+                width: 100%;
+                border-radius: 16px 16px 0 0;
             }
         }
         &__details {
@@ -69,44 +77,44 @@
             &__price {
                 margin: 1rem;
             }
+        }
+        &__button {
+            align-items: center;
+            background-color: #435dc7;
+            border: 1px solid #435dc7;
+            border-radius: 14px;
+            color: #fff;
+            cursor: inherit;
+            display: flex;
+            font-family: Muli, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            height: 40px;
+            justify-content: center;
+            width: 40%;
+            margin: 1rem auto;
+
+            &:hover {
+            }
+        }
+
+        &:hover {
+            transition: 200ms;
+            transform: translateY(-2px);
+            color: black;
         }
     }
 }
 
 .cart-list {
-    background-color: #46233f;
-    width: 85%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    &__product-card {
-        width: 500px;
-        border: 1px solid #e20909;
-        border-radius: 16px;
-        margin: 8px 16px;
-        &__title {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            p {
-                margin: 1rem;
-            }
-            img {
-                width: 70%;
-            }
-        }
-        &__details {
-            width: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px auto;
-            &__price {
-                margin: 1rem;
-            }
-        }
+    &__item {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid red;
     }
 }
 /*Tablet*/

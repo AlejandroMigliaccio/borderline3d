@@ -1,4 +1,4 @@
-const products = [
+export const products = [
     { id: 1, name: "Familia", price: "$780", description: "Adorno que representa la union entre padre/madre e hijo/a", url: "./public/Productos/fami.png" },
     { id: 2, name: "Snitch", price: "$595", description: "Snitch de la saga Harry Potter escala 1:1", url: "./public/Productos/harry.png" },
     { id: 3, name: "Llaveros Personalizados", price: "$1100", description: "Llaveros personalizados para las llaves de tu casa o el auto", url: "./public/Productos/lavve.png" },
@@ -10,54 +10,39 @@ const products = [
     { id: 9, name: "Venus de Jalea", price: "$3000", description: "Estatua de mmmmmmm... gloriosa Venus de jalea, 25 cm de alto", url: "./public/Productos/venus.png" }
 ]
 
-const cartId = []
-const cartName = []
+export const cartId=[];
 
-const productsList = document.getElementById("product-list");
-const cartList= document.getElementById("cart-list")
-function loadCards() {
-    for (const product of products) {
-           productsList.innerHTML += "<div class='product-list__product-card'>"
-            + "<div class='product-list__product-card__title'>"
-            + "<p>" + product.name + "<p>"
-            + "<img alr=title src='" + product.url + "'/>"
-            + "</div>"
-            + "<div class='product-list__product-card__details'>"
-            + "<p class='product-list__product-card__details__price'>"
-            + product.price + "</p>"
-            + "<p class='product-list__product-card__details__description'>"
-            + product.description + "</p>"
-            + "</div>"
-            + "<button class='product-list__product-card__button' onclick='(addToCart("+ `${product.id}`+"))'>buy</button>"
-            + "</div>"
-    }
-}
+// const cartId = []
+// const cartName = []
 
-loadCards()
-loadCardsOfCart(cartName)
-function addToCart(product) {
-    cartId.push(product)
-    for (const id of cartId){
-        for(const product of products){
-            if(id == product.id){
-                cartName.push(product.name)
-            }
-        }
-
-    }
-}
+// const cartList= document.getElementById("cart-list")
 
 
-function loadCardsOfCart() {
-    for (const product of cartName) {
-        cartList.innerHTML += "<div class='cart-list__product-card'>"
-            + "<div class='cart-list__product-card__title'>"
-            + "<p>" + product + "<p>"
-            + "<button class='cart-list__product-card__button' ondblclick='(remuvefromCart("+ `${cartId}`+"))'>buy</button>"
-            + "</div>"
-    }
-}
+// loadCards()
+// loadCardsOfCart(cartName)
+// function addToCart(product) {
+//     cartId.push(product)
+//     for (const id of cartId){
+//         for(const product of products){
+//             if(id == product.id){
+//                 cartName.push(product.name)
+//             }
+//         }
 
-function remuvefromCart(id){
+//     }
+// }
 
-}
+
+// function loadCardsOfCart() {
+//     for (const product of cartName) {
+//         cartList.innerHTML += "<div class='cart-list__product-card'>"
+//             + "<div class='cart-list__product-card__title'>"
+//             + "<p>" + product + "<p>"
+//             + "<button class='cart-list__product-card__button' ondblclick='(remuvefromCart("+ `${cartId}`+"))'>buy</button>"
+//             + "</div>"
+//     }
+// }
+
+// function remuvefromCart(id){
+
+// }

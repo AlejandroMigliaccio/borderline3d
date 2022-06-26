@@ -1,5 +1,10 @@
+import {products} from "./products.js";
+import { loadProductsCards } from "./conponents/productCards.js";
+
+loadProductsCards(products);
 
 
+// loadCards(products)
 // const locations = [
 //     { id: "1", name: "palermo", price: 3000 },
 //     { id: "2", name: "belgrano", price: 3500 },
