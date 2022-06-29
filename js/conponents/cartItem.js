@@ -31,16 +31,13 @@ export const remuveItemCard = (p) =>{
 }
 
 const saveCart = () =>{
-    if(cart.length > 0)
-        localStorage.setItem("cart", JSON.stringify(cart)) 
+    (cart.length > 0)? localStorage.setItem("cart", JSON.stringify(cart)) : null
 }
 
 export const reloadCart = () =>{
-    debugger
     let reCart
-    if (reCart= JSON.parse(localStorage.getItem("cart"))) 
-    console.log("el carrito tiene ", reCart)
-        reCart.forEach(i => {cart.push(i)}) 
-        console.log("y se llena ", cart)    
+    (reCart= JSON.parse(localStorage.getItem("cart"))) ?
+        reCart.forEach(i => {cart.push(i)}) : null 
+        
 }
 
