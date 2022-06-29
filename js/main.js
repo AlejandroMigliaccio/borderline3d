@@ -1,6 +1,7 @@
 import { products } from "./products.js"; 
 import {loadCards} from "./conponents/productCards.js";
-
+import {reloadCart} from "./conponents/cartItem.js";
+reloadCart();
 loadCards(products);
 
 

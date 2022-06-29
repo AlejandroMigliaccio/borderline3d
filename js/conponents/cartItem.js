@@ -8,7 +8,7 @@ export const addToCart = (productid) => {
 
     let item = products.find(item => item.id == productid);
     cart.push(item)
-
+    saveCart()
     let cartItem = document.createElement('li');
     cartItem.id=item.id;
     cartItem.classList.add('cart-list__item');
@@ -29,3 +29,18 @@ export const remuveItemCard = (p) =>{
     const remuveItem = document.getElementById(`${p}`)
     remuveItem.remove()
 }
+
+const saveCart = () =>{
+    if(cart.length > 0)
+        localStorage.setItem("cart", JSON.stringify(cart)) 
+}
+
+export const reloadCart = () =>{
+    debugger
+    let reCart
+    if (reCart= JSON.parse(localStorage.getItem("cart"))) 
+    console.log("el carrito tiene ", reCart)
+        reCart.forEach(i => {cart.push(i)}) 
+        console.log("y se llena ", cart)    
+}
+

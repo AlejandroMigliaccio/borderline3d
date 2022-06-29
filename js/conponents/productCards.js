@@ -17,7 +17,7 @@ export const loadCards = (products) => {
                             <h3 class="product-list__product-card__details__price">${p.price}</h3>
                             <p class='product-list__product-card__details__description'>${p.description}</p>
                         </div>
-                        <button class='product-list__product-card__button' id='button${p.id}'>Buy</button>`
+                        <button class='product-list__product-card__button' id='button${p.id}'>Comprar</button>`
         productList.appendChild(card);
         const button = document.getElementById(`button${p.id}`)
         button.addEventListener('click', ()=>{

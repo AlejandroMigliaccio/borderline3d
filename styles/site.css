@@ -40,7 +40,10 @@
     box-sizing: border-box;
     box-shadow: 0 4px 24px;
     word-wrap: break-word;
-    cursor: pointer; }
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
     .product-list__product-card__title {
       justify-content: center;
       display: flex;
