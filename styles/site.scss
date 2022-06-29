@@ -117,22 +117,31 @@
         
     }
 
-    .cart-list {
-     width: 80%;
-        &__item{
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-radius: 16px;
-            border: 1px solid #576f72;
-            &__price{
-                margin: auto 0;
-            }
-        }
-    }
+   
 }
-
+.cart-list {
+    width: 80%;
+    margin: 2rem auto;
+       &__item{
+           list-style: none;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           border-radius: 16px;
+           border: 1px solid #576f72;
+           margin-bottom: 1rem;
+           &__title{
+                margin: auto 2rem;
+                text-align: center;
+           }
+           &__price{
+               margin: auto 0;
+           }
+           img{
+            margin-right: 1rem;
+           }
+       }
+   }
 /*Tablet*/
 @media only screen and (min-width: 600px) {
 }
