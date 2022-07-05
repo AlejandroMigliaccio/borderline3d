@@ -1,8 +1,8 @@
-import { addToCart } from "./cartItem.js";
+import { addToCart, reloadCart } from "./cartItem.js";
 
 
 export const loadCards = (products) => {
-
+    reloadCart()
     const productList = document.getElementById("product-list");
 
     products.forEach(p => {

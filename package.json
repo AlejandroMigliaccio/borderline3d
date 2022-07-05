@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "download": "^8.0.0"
+    "download": "^8.0.0",
+    "sweetalert2": "^11.4.20"
   },
   "name": "borderline3d",
   "version": "1.0.0",
