@@ -22,7 +22,17 @@ export const loadCards = (products) => {
         const button = document.getElementById(`button${p.id}`)
         button.addEventListener('click', ()=>{
             addToCart(p.id);
+            confirmado();
         })
     });
 }
 
+const confirmado = ()=>{    
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'El producto se ha añadido a su carrito',
+        showConfirmButton: false,
+        timer: 1500
+      })
+}

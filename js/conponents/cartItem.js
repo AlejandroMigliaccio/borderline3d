@@ -23,6 +23,7 @@ export const addToCart = (productid) => {
     const button = document.getElementById(`cross${item.id}`);
     button.addEventListener('click', () => {
         remuveItemCard(item.id)
+        alerta();
     })
 }
 
@@ -68,3 +69,13 @@ export const retunedSavecart = () => {
     }
 }
 
+const alerta = ()=>{
+    debugger
+    
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        footer: '<a href="">Why do I have this issue?</a>'
+      })
+}
