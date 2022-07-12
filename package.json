@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "download": "^8.0.0",
+    "sweetalert2": "^11.4.20"
+  },
+  "name": "borderline3d",
+  "version": "1.0.0",
+  "description": "Borderline 3D e-commerce kind site",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss styles/site.scss styles/site.css ",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroMigliaccio/borderline3d.git"
+  },
+  "author": "Alejandro Migliaccio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandroMigliaccio/borderline3d/issues"
+  },
+  "homepage": "https://github.com/AlejandroMigliaccio/borderline3d#readme"
+}

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  transition: 200ms; }
+
+/*mobile*/
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #d3dedc;
+  justify-content: space-evenly; }
+  .header__title {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .header__title__logo {
+      width: 12%;
+      border-radius: 100%; }
+    .header__title__title {
+      width: 50%;
+      margin-left: 4%; }
+  .header__instagram {
+    width: 5%; }
+
+.product-list {
+  background-color: #f9f9f9;
+  width: 85%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .product-list__product-card {
+    width: 30%;
+    height: auto;
+    border-radius: 16px;
+    margin: 8px 16px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 24px;
+    word-wrap: break-word;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .product-list__product-card__title {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+      text-align: center; }
+      .product-list__product-card__title p {
+        margin: 1rem;
+        color: #19264a;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 16px;
+        margin-bottom: 2.5px; }
+      .product-list__product-card__title img {
+        width: 100%;
+        border-radius: 16px 16px 0 0; }
+    .product-list__product-card__details {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px auto; }
+      .product-list__product-card__details__price {
+        margin: 1rem;
+        color: #708d8c;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 22px;
+        margin: 0; }
+    .product-list__product-card__button {
+      align-items: center;
+      background-color: #708d8c;
+      border: 1px solid #576f72;
+      border-radius: 14px;
+      color: #fff;
+      cursor: inherit;
+      display: flex;
+      font-family: Muli, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      height: 40px;
+      justify-content: center;
+      width: 40%;
+      margin: 1rem auto; }
+    .product-list__product-card:hover {
+      transition: 200ms;
+      transform: translateY(-2px);
+      color: black; }
+
+.cart-list {
+  width: 80%;
+  margin: 2rem auto; }
+  .cart-list__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    border: 1px solid #576f72;
+    margin-bottom: 1rem; }
+    .cart-list__item__title {
+      margin: auto 2rem;
+      text-align: center; }
+    .cart-list__item__price {
+      margin: auto 0; }
+    .cart-list__item img {
+      margin-right: 1rem; }
+
+/*Tablet*/
+/*Desktop*/
