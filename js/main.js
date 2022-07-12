@@ -1,9 +1,9 @@
-import { products } from "./products.js"; 
-import {loadCards} from "./conponents/productCards.js";
+import { getData, loadCards } from "./conponents/productCards.js";
 import {reloadCart, retunedSavecart} from "./conponents/cartItem.js";
+getData();
+loadCards();
 reloadCart();
 retunedSavecart();
-loadCards(products);
  
 
 // import { products } from "./products.js";
